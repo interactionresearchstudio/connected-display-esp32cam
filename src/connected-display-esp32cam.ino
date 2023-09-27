@@ -80,6 +80,8 @@ void setup() {
   wm.addParameter(&customDisplayName);
   wm.addParameter(&customTimerIntervalSeconds);
 
+  WiFi.setHostname("connectedShelf");
+
   bool res;
   res = wm.autoConnect(); // password protected ap
 
